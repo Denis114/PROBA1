@@ -5,29 +5,20 @@
     android:weightSum="1">
 
     <RelativeLayout
-        android:id="@+id/OCRTextContainer"
         android:layout_width="match_parent"
-        android:layout_height="53dp"
-        android:background="#e4e3e3">
+        android:layout_height="491dp">
 
         <TextView
-            android:id="@+id/OCRTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:background="#dedede"
-            android:text="OCR Text will appear here"
-            android:textColor="#a3a3a3"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:typeface="normal" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+            android:id="@+id/textView14"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button7"
@@ -39,172 +30,198 @@
             android:onClick="OnClick_TEST"
             android:text="@string/vihod" />
 
-        <EditText
-            android:id="@+id/editText4"
-            android:layout_width="115dp"
-            android:layout_height="40dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="19dp"
-            android:layout_marginStart="19dp"
-            android:layout_marginTop="23dp"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:text="Номер" />
-
-        <EditText
-            android:id="@+id/editText5"
-            android:layout_width="115dp"
-            android:layout_height="40dp"
-            android:layout_alignLeft="@+id/editText4"
-            android:layout_alignStart="@+id/editText4"
-            android:layout_below="@+id/editText4"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:text="Марка" />
-
-        <EditText
-            android:id="@+id/editText6"
-            android:layout_width="115dp"
-            android:layout_height="40dp"
-            android:layout_alignLeft="@+id/editText5"
-            android:layout_alignStart="@+id/editText5"
-            android:layout_below="@+id/editText5"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:text="Модель" />
-
-        <EditText
-            android:id="@+id/editText7"
-            android:layout_width="115dp"
-            android:layout_height="40dp"
-            android:layout_alignLeft="@+id/editText6"
-            android:layout_alignStart="@+id/editText6"
-            android:layout_below="@+id/editText6"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:text="Владелец" />
-
-        <EditText
-            android:id="@+id/editText8"
-            android:layout_width="115dp"
-            android:layout_height="40dp"
-            android:layout_alignLeft="@+id/editText7"
-            android:layout_alignStart="@+id/editText7"
-            android:layout_below="@+id/editText7"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:text="Вин номер" />
-
-        <EditText
-            android:id="@+id/editText9"
-            android:layout_width="115dp"
-            android:layout_height="40dp"
-            android:layout_alignLeft="@+id/editText8"
-            android:layout_alignStart="@+id/editText8"
-            android:layout_below="@+id/editText8"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:text="Год выпуска" />
-
-        <EditText
-            android:id="@+id/editText11"
-            android:layout_width="115dp"
-            android:layout_height="40dp"
-            android:layout_alignLeft="@+id/editText10"
-            android:layout_alignStart="@+id/editText10"
-            android:layout_below="@+id/editText10"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:text="Битая" />
-
-        <EditText
-            android:id="@+id/editText10"
-            android:layout_width="115dp"
-            android:layout_height="40dp"
-            android:layout_alignLeft="@+id/editText9"
-            android:layout_alignStart="@+id/editText9"
-            android:layout_below="@+id/editText9"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:text="Мощность" />
-
         <TextView
             android:id="@+id/textView7"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/editText6"
-            android:text="TextView" />
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_above="@+id/textView8"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_marginBottom="19dp"
+            android:text="Владелец" />
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
             android:layout_above="@+id/textView5"
             android:layout_alignLeft="@+id/textView5"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_alignStart="@+id/textView5"
-            android:text="TextView" />
+            android:layout_marginBottom="20dp"
+            android:text="Номер" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignEnd="@+id/textView13"
+            android:layout_alignLeft="@+id/textView13"
+            android:layout_alignRight="@+id/textView13"
+            android:layout_alignStart="@+id/textView13"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_toEndOf="@+id/textView4"
+            android:layout_toRightOf="@+id/textView4"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/textView11"
+            android:layout_alignBottom="@+id/textView11"
+            android:layout_alignEnd="@+id/textView15"
+            android:layout_alignLeft="@+id/textView18"
+            android:layout_alignRight="@+id/textView15"
+            android:layout_alignStart="@+id/textView18"
+            android:layout_toStartOf="@+id/button7"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/textView10"
+            android:layout_alignBottom="@+id/textView10"
+            android:layout_alignEnd="@+id/textView17"
+            android:layout_alignLeft="@+id/textView17"
+            android:layout_alignRight="@+id/textView17"
+            android:layout_alignStart="@+id/textView17"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/textView9"
+            android:layout_alignBottom="@+id/textView9"
+            android:layout_alignEnd="@+id/textView16"
+            android:layout_alignLeft="@+id/textView16"
+            android:layout_alignRight="@+id/textView16"
+            android:layout_alignStart="@+id/textView16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/textView8"
+            android:layout_alignBottom="@+id/textView8"
+            android:layout_alignEnd="@+id/textView15"
+            android:layout_alignLeft="@+id/textView15"
+            android:layout_alignRight="@+id/textView15"
+            android:layout_alignStart="@+id/textView15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/textView7"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_alignEnd="@+id/textView14"
+            android:layout_alignLeft="@+id/textView14"
+            android:layout_alignRight="@+id/textView14"
+            android:layout_alignStart="@+id/textView14"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_above="@+id/textView6"
             android:layout_alignLeft="@+id/textView6"
             android:layout_alignStart="@+id/textView6"
-            android:layout_alignTop="@+id/editText5"
-            android:text="TextView" />
+            android:layout_marginBottom="19dp"
+            android:text="Марка" />
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_above="@+id/textView7"
             android:layout_alignLeft="@+id/textView7"
             android:layout_alignStart="@+id/textView7"
-            android:layout_below="@+id/textView5"
-            android:text="TextView" />
+            android:layout_marginBottom="22dp"
+            android:text="Модель" />
 
         <TextView
             android:id="@+id/textView8"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_above="@+id/textView9"
             android:layout_alignLeft="@+id/textView9"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_alignStart="@+id/textView9"
-            android:layout_below="@+id/textView7"
-            android:text="TextView" />
+            android:layout_marginBottom="19dp"
+            android:text="Вин номер" />
 
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_above="@+id/textView10"
             android:layout_alignLeft="@+id/textView10"
             android:layout_alignStart="@+id/textView10"
-            android:layout_below="@+id/textView8"
-            android:text="TextView" />
+            android:layout_marginBottom="18dp"
+            android:text="Год выпуска" />
 
         <TextView
             android:id="@+id/textView10"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:layout_above="@+id/editText11"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_above="@+id/textView11"
             android:layout_alignLeft="@+id/textView11"
             android:layout_alignStart="@+id/textView11"
-            android:text="TextView" />
+            android:layout_marginBottom="22dp"
+            android:text="Мощность" />
 
         <TextView
             android:id="@+id/textView11"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:layout_alignLeft="@+id/textView7"
-            android:layout_alignStart="@+id/textView7"
-            android:layout_below="@+id/textView10"
-            android:text="TextView" />
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_above="@+id/button7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="62dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:text="Битая"
+            android:textAlignment="textStart"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/OCRTextContainer"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#e4e3e3">
+
+            <TextView
+                android:id="@+id/OCRTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="#dedede"
+                android:text="OCR Text will appear here"
+                android:textColor="#a3a3a3"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </RelativeLayout>
+
     </RelativeLayout>
 
 </LinearLayout>

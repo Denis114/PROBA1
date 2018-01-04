@@ -263,14 +263,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void OnClick_TEST(View view) {
-        IvImage.setVisibility(View.INVISIBLE);
-        surfaceView.setVisibility(View.INVISIBLE);
-        this.finish();
-
-    }
-
-
     private void releaseMediaRecorder() {
         if (mediaRecorder != null) {
             mediaRecorder.reset();  // Если хотим использовать этот же объект для другой записи с другими настройками
@@ -290,63 +282,17 @@ public class MainActivity extends AppCompatActivity {
                 case 2: IvImage.setImageBitmap(bitmap); break;
                 case 3: IvImage1.setImageBitmap(bitmap); break;
                 case 4: IvImage2.setImageBitmap(bitmap); break;}
-         //   IvImage.setImageBitmap(bitmap);
-         //   IvImage.setImageURI(data.getData());
-//IvImage1.setImageBitmap(bitmap);
               Uri imageUri=data.getData();
             try {
-                //   Bitmap bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(),imageUri);
-                //  Bitmap bitmap = ((BitmapDrawable)IvImage.getDrawable()).getBitmap();
-
-             //   Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
-             //   File f = new File(mCurrentPhotoPath);
-             //   Uri contentUri = Uri.fromFile(f);
-             //   mediaScanIntent.setData(contentUri);
-              //  this.sendBroadcast(mediaScanIntent);
                 switch (requestCode) {
                     case 2:  saveImageFile(bitmap,1); break;
                     case 3:  saveImageFile(bitmap,2); break;
                     case 4:  saveImageFile(bitmap,3); break;}
-               //   saveImageFile(bitmap);
-               // Bitmap tempBitmap = BitmapFactory
-                 //       .decodeStream(getContentResolver().openInputStream(
-                 //               imageUri));
-              //  Drawable drawable = new BitmapDrawable(getResources(),
-                //        tempBitmap);
-            //    Drawable drawable=Drawable.createFromPath("/storage/sdcard0/Pictures/1.jpg");
-              //  IvImage1.setImageDrawable(drawable);
-             //   IvImage1.setImageDrawable(Drawable.createFromPath("/storage/sdcard0/Pictures/1.jpg"));
-               // IvImage1.setVisibility(View.VISIBLE);
-               // ImageView ivSource = (ImageView) findViewById(R.id.imageView); // 1-й компонент с какой-то картинкой
-               // ImageView ivTarget = (ImageView) findViewById(R.id.imageView1); // 2-й компонент без картинки
-
-               // Drawable drawable = ivSource.getDrawable(); // получим картинку у первого компонента
-              //  ivTarget.setImageDrawable(drawable); // присвоим второму
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
     }
-
-
-
-   // protected void getFilename(){
-        // создание файла с уникальным именем
-   //     String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-    //    String imageFileName = "JPEG_" + timeStamp + "_";
-     //   File storageDir = Environment.getExternalStoragePublicDirectory(
-    //            Environment.DIRECTORY_PICTURES);
-//
-    //    File image = File.createTempFile(
-    //            imageFileName,  /* префикс */
-    //            ".jpg",         /* расширение */
-    //            storageDir      /* директория */
-    //    );
-
-        // сохраняем пусть для использования с интентом ACTION_VIEW
-      //  mCurrentPhotoPath = "file:" + image.getAbsolutePath();
-      //  return image;
-   // }
 
     public String saveImageFile(Bitmap bitmap,int pp) {
         FileOutputStream out = null;
@@ -375,9 +321,6 @@ public class MainActivity extends AppCompatActivity {
             case 3:    uriSting = (file.getAbsolutePath() + "/"
                     + "3.jpg"); break;
         }
-
-         //  String uriSting = (file.getAbsolutePath() + "/"
-           //      + "1.jpg");
                 return uriSting;
     }
 
